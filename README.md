@@ -3,7 +3,7 @@ node实现的简单高效的html文档解析工具。
 
 # Installation
 
-	$ npm i simple-http-parser
+	$ npm i simple-html-parser
 
 # Example
 
