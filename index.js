@@ -21,6 +21,9 @@ function decodeHTML(html) {
 }
 
 function HTMLParser(html) {
+	if (!(this instanceof HTMLParser)) {
+		return new HTMLParser(html);
+	}
 	var elements = this._elements = [];
 	var rawElements = [];
 	var tagElements = this._tagElements = {};

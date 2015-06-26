@@ -9,7 +9,7 @@ node实现的简单高效的html文档解析工具。
 
 	var HTMLParser = require('simple-http-parser');
 	var html = '<span class="test1 test2"></span><div id="test"><div><input test="a" /></div>'
-	var document = HTMLParser(html);
+	var document = new HTMLParser(html);
 	
 	//通过id获取元素，如果id对应的元素不存在，则返回 `null`
 	console.log(document.getElementById('test')); 
