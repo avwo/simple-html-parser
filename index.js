@@ -17,7 +17,7 @@ function fdecodeEntity(matched, charCode, lastCharCode) {
 }
 
 function decodeHTML(html) {
-    return html.replace(rdecodeEntity, fdecodeEntity).replace(rhtmlSpace, ' ');
+    return html ? html.replace(rdecodeEntity, fdecodeEntity).replace(rhtmlSpace, ' ') : '';
 }
 
 function HTMLParser(html) {
@@ -70,7 +70,7 @@ function HTMLParser(html) {
 	function setAttributes(elem) {
 		var attributes = elem.attributes = {};
 		if (/<[\w-]+([^>]+)\/?>/.test(elem.tagContent)) {
-			RegExp.$1.replace(/([\w-]+)=((['"])([\w\W]+?)\3|([^\s]+))/g, function() {
+			RegExp.$1.replace(/([\w-]+)=((['"])([\w\W]*?)\3|([^\s]*))/g, function() {
 				attributes[arguments[1]] = decodeHTML(arguments[4] || arguments[5]);
 			});
 		}

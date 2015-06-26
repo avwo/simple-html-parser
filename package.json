@@ -1,7 +1,7 @@
 {
   "name": "simple-html-parser",
   "description": "简单、高效的html解析器",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "avenwu <avenwu@vip.qq.com>",
   "license": "MIT",
   "homepage": "https://github.com/avwo/simple-html-parser",
