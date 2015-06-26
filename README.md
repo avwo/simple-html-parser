@@ -29,7 +29,7 @@ node实现的简单高效的html文档解析工具。
 		innerHTML: [string],
 		outerHTML: [string],
 		attributes: [object],
-		className: [array],
+		className: [array]
 	}
 
 	
