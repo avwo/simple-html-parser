@@ -11,7 +11,7 @@ node实现的简单高效的html文档解析工具。
 	var html = '<span class="test1 test2"></span><div id="test"><div><input test="a" /></div>'
 	var document = new HTMLParser(html);
 	
-	//通过id获取元素，如果id对应的元素不存在，则返回 `null`
+	//通过id获取元素，如果id对应的元素不存在，则返回 `undefined`
 	console.log(document.getElementById('test')); 
 	
 	//通过标签获取元素列表，如果对应的元素不存在，则返回 `[]`
